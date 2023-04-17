@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            background-color: powderblue;
+            border: 2px dashed green;
+        }
+
+        p {
+            float: left;
+            width: 44%;
+            padding: 2%;
+        }
+
+        #container::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolor voluptate numquam est! Nulla ad
+            magni sunt qui culpa ullam est autem necessitatibus ducimus ipsum. Natus eius sequi illo possimus!
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi suscipit officiis labore non. Veritatis
+            quos exercitationem temporibus non cumque fuga aliquam omnis? Harum debitis saepe voluptas vero in? Dolore,
+            doloribus.
+        </p>
+    </div>
+</body>
+
+</html>
