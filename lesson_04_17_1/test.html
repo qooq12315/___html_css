@@ -1,48 +1,65 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doccument</title>
+    <title>Document</title>
     <style>
-        #top{
-            background-color: #FFBA84;
+        #top {
+            background-color: #F9BF45;
             width: 300px;
+            height: 100px;
+            overflow: auto;
             margin: 20px;
             padding: 20px;
             border: 5px solid #90B44B;
-
         }
-        #bottom{
+
+        #bottom {
             box-sizing: border-box;
-            background-color: #FFBA84;
+            background-color: #F9BF45;
             width: 300px;
             margin: 20px;
             padding: 20px;
             border: 5px solid #90B44B;
-
         }
 
+        blockquote {
+            background-color: powderblue;
+            /*
+            padding-top: 2em;
+            padding-bottom: 2em;
+            padding-left: 4em;
+            padding-right: 4em;
+            */
+            padding: 2em 4em ;
+
+        }
     </style>
 </head>
 
 <body>
+    <p id="top">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati beatae ipsa enim laboriosam quaerat
+        dolore tenetur praesentium cupiditate dolorem vel commodi, blanditiis ipsum delectus sed culpa repellat. Culpa,
+        numquam quas?</p>
 
-    <p id="top">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur adipisci sapiente esse ratione distinctio
-        recusandae officia pariatur incidunt quam quo quisquam, sequi accusamus consequatur expedita illum eum quasi
-        repudiandae modi!
-    </p>
+    <p id="bottom">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati beatae ipsa enim laboriosam
+        quaerat dolore tenetur praesentium cupiditate dolorem vel commodi, blanditiis ipsum delectus sed culpa repellat.
+        Culpa, numquam quas?</p>
 
-    <p id="bottom">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur adipisci sapiente esse ratione distinctio
-        recusandae officia pariatur incidunt quam quo quisquam, sequi accusamus consequatur expedita illum eum quasi
-        repudiandae modi!
-    </p>
-
+    <blockquote>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea ex sunt, minima ratione nostrum reprehenderit
+            similique voluptatum architecto, optio, pariatur modi! Quisquam mollitia similique facilis tenetur molestiae
+            ipsum aspernatur repellendus?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quae quis voluptatem ab iusto modi, magni
+            placeat sit sunt veritatis facilis provident quod nostrum quas maxime consequatur aspernatur omnis hic.
+        </p>
+    </blockquote>
 </body>
 
 </html>
