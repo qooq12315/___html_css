@@ -7,23 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #container{
+        #container {
             display: flex;
+            /*
+            flex-direction: row;
+            flex-wrap: wrap;
+            */
+            flex-flow: row wrap;
+            height: 500px;
         }
-        .box1{
-            background-color: aquamarine;
+
+        .box1 {
+            background-color: rgb(133, 250, 211);
+            width: 50%;
         }
-        .box2{
+
+        .box2 {
             background-color: rgb(199, 247, 178);
+            width: 25%;
         }
-        .box3{
+
+        .box3 {
             background-color: rgb(160, 165, 243);
+            width: 25%;
         }
-        .box4{
+
+        .box4 {
             background-color: rgb(248, 150, 150);
+            width: 50%;
         }
-        .box5{
+
+        .box5 {
             background-color: rgb(255, 168, 127);
+            width: 50%;
         }
     </style>
 </head>
