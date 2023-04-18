@@ -26,6 +26,7 @@ nav ul{
     display: flex;
     flex-direction: row;
     justify-content: left;
+    
 }
 
 nav ul li a{
