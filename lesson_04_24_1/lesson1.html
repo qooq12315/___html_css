@@ -55,20 +55,20 @@
             box-sizing: border-box;
         }
 
-        section#banner h3{
+        section#banner h3 {
             font-size: 2.5em;
             text-align: center;
             color: #333;
         }
 
-        section#banner p{
+        section#banner p {
             font-size: 1.2em;
             text-align: center;
             line-height: 1.5em;
             color: #555;
         }
 
-        section#banner div{
+        section#banner div {
             text-align: center;
         }
 
@@ -81,14 +81,43 @@
             color: white;
             font-weight: bolder;
             border-radius: .8em;
-            
+
         }
+
         section#banner div a:link {
             text-decoration: none;
         }
 
         section#banner div a:hover {
             color: crimson;
+        }
+
+        main {
+            margin: 1em auto;
+
+        }
+
+        main h3 {
+            font-size: 1.5em;
+            color: #555;
+            border-bottom: #555 solid 1px;
+            padding-bottom: 1em;
+        }
+
+        main div#icons {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+
+        main div#icons section {
+            box-sizing: border-box;
+            /*border: solid 1px rgb(238, 89, 163);*/
+            flex: 1 1 auto;
+            padding: 1em;
+        }
+        main h4 {
+            font-size: 1.5em;
         }
     </style>
 </head>
@@ -114,6 +143,36 @@
             <a href="#">Secondary</a>
         </div>
     </section>
+    <main>
+        <h3>Columns with icons</h3>
+        <div id="icons">
+            <section>
+                <img src="images/QQQ.png" alt="icon1">
+                <h4>Featured title</h4>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence
+                    and probably just keep going until we run out of words.</p>
+                <p><a href="#">Call to action ></a></p>
+            </section>
+
+            <section>
+                <img src="images/reddit.png" alt="icon2">
+                <h4>Featured title</h4>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence
+                    and probably just keep going until we run out of words.</p>
+                <p><a href="#">Call to action ></a></p>
+            </section>
+
+            <section>
+                <img src="images/tinder.png" alt="icon3">
+                <h4>Featured title</h4>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence
+                    and probably just keep going until we run out of words.</p>
+                <p><a href="#">Call to action ></a></p>
+            </section>
+
+        </div>
+
+    </main>
 
 </body>
 
