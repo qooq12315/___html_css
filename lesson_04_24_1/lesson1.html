@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,11 @@
     <link rel="stylesheet" href="css/normalize.css">
     <title>Bootstrap Example</title>
     <style>
-        body{
-            margin:2em 10% 2em 5%;
+        body {
+            margin: 2em 10% 2em 5%;
         }
-        header ul{
+
+        header ul {
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
@@ -19,35 +21,78 @@
             padding-bottom: 1.5em;
             align-items: center;
         }
-        header ul{
+
+        header ul {
             margin: 0;
             padding: 0;
-            list-style-type:none;
+            list-style-type: none;
         }
-        
-        header ul li a{
-            display:block;
+
+        header ul li a {
+            display: block;
             padding: 0.5em;
             font-weight: bold;
             color: rgb(128, 151, 252);
         }
-        
-        header a.active{
-            color: rgb(255, 255, 255);
-            background-color: cornflowerblue;
-            border-radius: 0.4em;
 
+        header a.active {
+            color: rgb(255, 255, 255);
+            background-color: rgb(120, 164, 247);
+            border-radius: 0.4em;
         }
 
-        header ul li a:link{
+        header ul li a:link {
             text-decoration: none;
         }
-        
-        header #logo{
+
+        header #logo {
             margin-right: auto;
+        }
+
+        section#banner {
+            margin: 1em auto;
+            width: 75%;
+            box-sizing: border-box;
+        }
+
+        section#banner h3{
+            font-size: 2.5em;
+            text-align: center;
+            color: #333;
+        }
+
+        section#banner p{
+            font-size: 1.2em;
+            text-align: center;
+            line-height: 1.5em;
+            color: #555;
+        }
+
+        section#banner div{
+            text-align: center;
+        }
+
+        section#banner div a {
+            display: inline-block;
+            background-color: rgb(120, 164, 247);
+            padding: 1em 1.5em;
+            width: 5em;
+            text-align: center;
+            color: white;
+            font-weight: bolder;
+            border-radius: .8em;
+            
+        }
+        section#banner div a:link {
+            text-decoration: none;
+        }
+
+        section#banner div a:hover {
+            color: crimson;
         }
     </style>
 </head>
+
 <body>
     <header>
         <ul>
@@ -59,6 +104,17 @@
             <li><a href="#">About</a></li>
         </ul>
     </header>
-    
+    <section id="banner">
+        <h3>Centered hero</h3>
+        <p>Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end
+            open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt
+            components, and powerful JavaScript plugins.</p>
+        <div>
+            <a href="#">Primary</a>
+            <a href="#">Secondary</a>
+        </div>
+    </section>
+
 </body>
+
 </html>
