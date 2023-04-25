@@ -7,33 +7,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Response Web Design(RWD)</title>
     <style>
-        #container{
+        #container {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 10em 15em 60em 5em;
-            grid-template-areas: 
-            "header"
-            "aside"
-            "main"
-            "footer"
+            grid-template-rows: 10em 15em 60em 15em 5em;
+            grid-template-areas:
+                "header"
+                "aside"
+                "main"
+                "links"
+                "footer"
         }
-        header{
+
+        header {
             grid-area: header;
             background-color: rgb(250, 198, 174);
         }
 
-        aside{
+        aside {
             grid-area: aside;
             background-color: rgb(236, 236, 176);
         }
 
-        main{
+        main {
             grid-area: main;
             background-color: rgb(148, 248, 245);
         }
-        footer{
+
+        section{
+            grid-area: links;
+            background-color: rgb(139, 120, 247);
+        }
+
+        footer {
             grid-area: footer;
             background-color: rgb(245, 179, 245);
+        }
+
+        @media (min-width:768px) {
+            /*平板和筆電*/
+            #container{
+                display: grid;
+                grid-template-columns: 20em 1fr;
+                grid-template-rows: 10em 60em 15em 5em;
+                grid-template-areas: 
+                "header header"
+                "aside main"
+                "links links"
+                "footer footer"
+            }
+        }
+
+        @media (min-width:1200px) {
+            /*桌機*/
+            #container{
+                display: grid;
+                grid-template-columns: 20em 1fr 20em;
+                grid-template-rows: 10em 60em 5em;
+                grid-template-areas: 
+                "header header header"
+                "aside main links"
+                "footer footer footer"
+
         }
     </style>
 </head>
@@ -51,7 +86,9 @@
         <main>
             <h1>Main</h1>
         </main>
-
+        <section>
+            <h1>Links</h1>
+        </section>
         <footer>
             <h1>Footer</h1>
         </footer>
