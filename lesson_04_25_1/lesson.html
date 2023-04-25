@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        #layout {
+            display: grid;
+            grid-template-rows: [header-strat] 100px [content-start] 400px [footer-start] 100px;
+            grid-template-columns: [ads] 15emm [main] minmax(15em,45em) [links] 10em;
+            grid-template-areas:
+                "header header header"
+                "ads    main   links"
+                "footer footer footer";
+        }
+
+        #one {
+            grid-area: header;
+            font-size: 3em;
+            background-color: rgb(231, 79, 41);
+        }
+
+        #two {
+            grid-area: ads;
+            font-size: 3em;
+            background-color: rgb(236, 137, 79);
+        }
+
+        #three {
+            grid-area: main;
+            font-size: 3em;
+            background-color: rgb(238, 236, 118);
+        }
+
+        #four {
+            grid-area: links;
+            font-size: 3em;
+            background-color: rgb(168, 245, 117);
+        }
+
+        #five {
+            grid-area: footer;
+            font-size: 3em;
+            background-color: rgb(108, 224, 245);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="layout">
+        <div id="one">one</div>
+        <div id="two">two</div>
+        <div id="three">three</div>
+        <div id="four">four</div>
+        <div id="five">five</div>
+
+    </div>
+
+</body>
+
+</html>
