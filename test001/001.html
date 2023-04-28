@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>001</title>
     <style>
-
         #container {
             display: grid;
             grid-template-columns: 1fr;
@@ -34,24 +33,29 @@
         }
 
         h1 {
-            font-weight: lighter;
-            font-size: smaller;
+            font-weight: bolder;
+            font-size: 1em;
+            text-align: center;
+            text-shadow: 2px 3px  0 #ffffff ;
             
         }
 
         main {
             grid-area: main;
             background-color: rgb(163, 245, 217);
+            text-align: center;
         }
 
         section {
             grid-area: links;
             background-color: cornsilk;
+            text-align: center;
         }
 
         footer {
             grid-area: footer;
             background-color: rgb(243, 195, 202);
+            text-align: center;
         }
 
         header {
@@ -63,10 +67,10 @@
         }
 
         header ul {
-            display: flex;
             margin: 0;
             padding: 0;
             list-style-type: none;
+            display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
             justify-content: space-around;
@@ -91,7 +95,7 @@
             height: 200px;
 
         }
-        
+
 
         @media (min-width:768px) {
 
@@ -99,14 +103,15 @@
             #container {
                 display: grid;
                 grid-template-columns: 20em 1fr;
-                grid-template-rows: auto 60em 15em 5em;
+                grid-template-rows: auto 60em 15em 15em;
                 grid-template-areas:
                     "header header"
                     "aside main"
                     "links links"
                     "footer footer"
             }
-            header{
+
+            header {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: nowrap;
@@ -114,21 +119,19 @@
             }
         }
 
-            @media (min-width:1200px) {
-                #container {
-                    display: grid;
-                    grid-template-columns: 20em 1fr 20em;
-                    grid-template-rows: auto 30em 20em;
-                    grid-template-areas:
-                        "header header header"
-                        "aside main links"
-                        "footer footer footer"
-
-                }
+        @media (min-width:1200px) {
+            #container {
+                display: grid;
+                grid-template-columns: 20em 1fr 20em;
+                grid-template-rows: auto 30em 20em;
+                grid-template-areas:
+                    "header header header"
+                    "aside main links"
+                    "footer footer footer"
 
             }
 
-        
+        }
     </style>
 </head>
 
@@ -148,6 +151,7 @@
                     <li><a href="#">Six</a></li>
                 </ul>
             </nav>
+            
         </header>
 
         <aside>
@@ -155,15 +159,17 @@
         </aside>
 
         <main>
-            Yes!
+            <h1>Yes!</h1>
         </main>
 
         <section>
-            No!
+            <h1>No!</h1>
         </section>
+
         <footer>
-            Qoo!
+            <h1>Qoo!</h1>
         </footer>
+
     </div>
 </body>
 
